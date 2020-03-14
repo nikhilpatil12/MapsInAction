@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DroneControl</string>
+    <string name="action_settings">Settings</string>
+    <string name="addnew">Add new Locations</string>
+    <string name="update_database">Update Local Database</string>
+    <string name="save">Refresh</string>
+</resources>

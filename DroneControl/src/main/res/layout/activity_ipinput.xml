@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.journaldev.MapsInAction.IPInput">
+
+    <LinearLayout
+        android:layout_width="362dp"
+        android:layout_height="340dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP Address of Raspberry Pi" />
+
+        <EditText
+            android:id="@+id/ipInput"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="362dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username" />
+
+                <EditText
+                    android:id="@+id/sshusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/sshpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveIp"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/shape"
+        android:text="Continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="Use local IPv4 address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="64dp"
+        android:text="Enter IP Address"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
